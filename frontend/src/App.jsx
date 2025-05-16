@@ -16,7 +16,7 @@ const App = () => {
   const [errorMessage, setErrorMessage] = useState(null)
   useEffect(() => {
     console.log('effect')
-    axios.get('https://three-phonebook-step9-1.onrender.com/api/persons').then((response) => {
+    axios.get('/api/persons').then((response) => {
       console.log('promise fulfilled')
       setPersons(response.data)
     })
